@@ -24,7 +24,7 @@ Click on the toggle button to switch the LED status on and off. The button inter
 Contributions are welcome. Please open an issue or pull request for any changes or improvements.
 
 ## Question
-* Mail : alanwalk93@gmail.com
+* Mail : mahsook.m.a@gmail.com
 * LinkedIn : [LinkedIn](https://www.linkedin.com/in/mahsook/)
 * Github : [Github](https://www.github.com/mahsook3/)
 
