@@ -22,4 +22,4 @@ Click on the toggle button to switch the LED status on and off. The button inter
 Contributions are welcome. Please open an issue or pull request for any changes or improvements.
 
 ##License
-This project is licensed under the MIT License - see the [LICENSE](/CONTRIBUTING.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
