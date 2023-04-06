@@ -31,7 +31,7 @@ To use the toggle button, simply click on it. The state of the LED will be updat
 [Mohamed Shaik Mahsook](https://github.com/mahsook3)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE.md) file for details.
 
 ## Acknowledgments
 * Thanks to Firebase for providing a great platform for real-time data storage and synchronization.
