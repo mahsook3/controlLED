@@ -12,11 +12,11 @@ This is a simple project that demonstrates how to use Firebase Realtime Database
 ## Installing
 1. Create a new project in the Firebase console.
 2. Add a new app to the project and copy the Firebase configuration code.
-3. Add the firebase-app.js and firebase-database.js scripts to your HTML file.
+3. Add the **'firebase-app.js'** and **'firebase-database.js'** scripts to your HTML file.
 4. Connect your NeoPixel LED to your Arduino board.
-5. pload the Firebase_Toggle_Button.ino sketch to your Arduino board.
-6. Update the WIFI_SSID, WIFI_PASSWORD, FIREBASE_HOST, and FIREBASE_AUTH variables in the Arduino sketch with your own values.
-7. Open the index.html file in your web browser.
+5. Upload the [Toggle_button.ino](/Toggle_button.ino) sketch to your Arduino board.
+6. Update the **'WIFI_SSID'**, **'WIFI_PASSWORD'**, **'FIREBASE_HOST'**, and **'FIREBASE_AUTH'** variables in the Arduino sketch with your own values.
+7. Open the [index.html](/index.html) file in your web browser.
 
 ## Usage
 To use the toggle button, simply click on it. The state of the LED will be updated in real-time in both the Firebase database and the Arduino board.
