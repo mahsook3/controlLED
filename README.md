@@ -22,10 +22,10 @@ This is a simple project that demonstrates how to use Firebase Realtime Database
 To use the toggle button, simply click on it. The state of the LED will be updated in real-time in both the Firebase database and the Arduino board.
 
 ## Built With
-[Firebase Realtime Database](https://firebase.google.com/docs/database) - Database used to store LED state
-[jQuery](https://jquery.com/) - JavaScript library used for DOM manipulation
-[FontAwesome](https://fontawesome.com/) - Icon library used for toggle button icon
-[Arduino IDE](https://www.arduino.cc/en/software) - Integrated development environment used to write and upload code to the Arduino board
+* [Firebase Realtime Database](https://firebase.google.com/docs/database) - Database used to store LED state* 
+* [jQuery](https://jquery.com/) - JavaScript library used for DOM manipulation
+* [FontAwesome](https://fontawesome.com/) - Icon library used for toggle button icon
+* [Arduino IDE](https://www.arduino.cc/en/software) - Integrated development environment used to write and upload code to the Arduino board
 
 ## Authors
 [Mohamed Shaik Mahsook](https://github.com/mahsook3)
