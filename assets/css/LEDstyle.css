@@ -1,0 +1,166 @@
+.card {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+   }
+   
+   .card::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+   
+   .card-info {
+    --color: #181818;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+   
+   .card .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+   }
+   
+   /*Hover*/
+   .card:hover::after {
+    opacity: 0;
+   }
+   
+   .card:hover .card-info {
+    color: #f7ba2b;
+    transition: color 1s;
+   }
+    
+/* Default styles */
+h1 {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.led-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+.led {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: grey;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.led::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.led.active::before {
+    opacity: 0.5;
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.7);
+}
+
+
+button {
+	font-size: 1.6rem;
+	padding: 1rem 2rem;
+	margin: 0 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+button#on-btn {
+	background-color: green;
+	color: white;
+}
+
+button#off-btn {
+	background-color: red;
+	color: white;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 2rem;
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.led {
+		width: 8rem;
+		height: 8rem;
+		margin-bottom: 2rem;
+	}
+
+	button {
+		font-size: 1.2rem;
+		padding: 0.8rem 1.6rem;
+		margin: 0 0.5rem;
+		border-radius: 0.3rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 1.5rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.led {
+		width: 6rem;
+		height: 6rem;
+		margin-bottom: 1.5rem;
+	}
+
+	button {
+		font-size: 1rem;
+		padding: 0.6rem 1.2rem;
+		margin: 0 0.3rem;
+		border-radius: 0.2rem;
+	}
+}
+button:hover, a:hover {
+    opacity: 0.7;
+  }
