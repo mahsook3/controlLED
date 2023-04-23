@@ -1,21 +1,21 @@
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-// Get a reference to the LED state in the Firebase database
-var ledRef = firebase.database().ref('led');
+// Get a reference to the LED status in the Firebase database
+var ledStatusRef = firebase.database().ref('led/status');
 
-// Update the LED state when the "Turn On" button is clicked
+// Update the LED status when the "Turn On" button is clicked
 document.getElementById("on-btn").addEventListener("click", function() {
-    ledRef.set(true);
+    ledStatusRef.set(1);
     document.querySelector(".led").classList.add("active");
 });
 
-
-// Update the LED state when the "Turn Off" button is clicked
+// Update the LED status when the "Turn Off" button is clicked
 document.getElementById("off-btn").addEventListener("click", function() {
-    ledRef.set(false);
+    ledStatusRef.set(0);
     document.querySelector(".led").classList.remove("active");
 });
+
 
 
 // Listen for changes to the LED state in the Firebase database
